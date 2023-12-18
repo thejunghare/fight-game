@@ -2,16 +2,45 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-    <canvas></canvas>
+  <body>
+    <div style="position: relative; border-color: red; display: inline-block">
+      <div style="position: absolute; display: flex; width: 100%">
+        <!-- player health -->
+        <div
+          id="playerhealth"
+          style="background-color: yellow; height: 30px; width: calc(100% / 3)"
+        ></div>
+        <!-- timer -->
+        <div
+          style="background-color: red; height: 30px; width: calc(100% / 3)"
+        ></div>
+        <!-- enemy health -->
+        <div style="position: relative; height: 30px; width: 100%">
+          <div
+            style="
+              background-color: yellow;
+              height: 30px;
+            "
+          >
+            <div
+              id="enemyhealth"
+              style="
+                background-color: yellow;
+                height: 30px;
+                width: calc(100% / 3);
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+      <canvas></canvas>
+    </div>
     <script src="./game.js"></script>
-</body>
-
+  </body>
 </html>
