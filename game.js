@@ -167,6 +167,7 @@ function animate() {
     player.isAttacking
   ) {
     player.isAttacking = false;
+    document.querySelector('#enemyhealth').style.width = 20%
     console.log("go");
   }
 
